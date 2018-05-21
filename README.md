@@ -10,7 +10,14 @@ dead systems.
 
 ### Prerequisites
 
-What htings you need to install and how to
+Copy the file 99-pololu.rules to /etc/udev/rules.d in order to grant permission
+for all users to use Pololu USB devices
+
+```
+sudo udevadm control --reload-rules
+```
+
+apt-get install libusb-1.0-0-dev
 
 ```
 Some Examples
