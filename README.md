@@ -1,7 +1,6 @@
 ## mini-DeXter
 
-one paragraph of project description
-
+mini-DeXter is a 17 DoF minature humanoid robot intended to be used for dance choreography. 4 mini-DeXters perform a dance initiated by the command /.emoteDance.
 ## Gettijng Started
 
 how to copy project and get it running on your local machine(s) for development
