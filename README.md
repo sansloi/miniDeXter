@@ -1,7 +1,6 @@
 ## mini-DeXter
 
-one paragraph of project description
-
+mini-DeXter is a 17 DoF minature humanoid robot intended to be used for dance choreography. 4 mini-DeXters perform a dance initiated by the command /.emoteDance.
 ## Gettijng Started
 
 how to copy project and get it running on your local machine(s) for development
@@ -9,18 +8,33 @@ and testing purposes. Deployment section is for live systems, this one if for
 dead systems.
 
 ### Prerequisites
+Grab your favoroite flavor of light weight raspberry compliant Debian.
+This image will be copied over to your mini SD card. Expect the download to be
+aout 300 MB.
+
+```
+wget https://downloads.raspberrypi.org/raspbian_lite_latest
+```
 
 Copy the file 99-pololu.rules to /etc/udev/rules.d in order to grant permission
 for all users to use Pololu USB devices
-
 ```
+cd /etc/udev/rules.d
+sudo ~/Downloads/pololu-usb-sdk/99-pololu.rules 99-pololu.rules
 sudo udevadm control --reload-rules
 ```
-
-apt-get install libusb-1.0-0-dev
+You'll need some additional libraries from outside this repo as well
 
 ```
-Some Examples
+apt-get install libusb-1.0-0-dev
+```
+
+and also
+
+For mono development
+
+```
+sudo apt-get install mono-devel
 ```
 
 ### Installing
