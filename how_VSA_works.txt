@@ -1,0 +1,4 @@
+To make the VSA software works set baud rate to 9600. select port the highest port available, meastro servos, re-set lower and higher the min and max value to 496 and 2100. 
+Beacause servos can have a wider range of motions than what is set by default by the program. Set up the stop position to an other value than the start value.
+To use two servos, connect each usb on the laptop and only start VSA after to make all the ports detected. Once it is done change the adress to match the channel used on
+each maestro and change the port according to each usb connected.
